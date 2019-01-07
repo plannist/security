@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sec.prac.mapper.UserMapper">
+<!-- 	<resultMap type="com.sec.prac.mapper.UserVO" id="Dust"> -->
+<!-- 		<result property="email" column="email" /> -->
+<!-- 		<result property="password" column="password" /> -->
+<!-- 		<result property="name" column="name" /> -->
+<!-- 		<result property="hp" column="hp" /> -->
+<!-- 		<result property="question_type" column="question_type" /> -->
+<!-- 		<result property="response" column="response" /> -->
+<!-- 		<result property="robot_serial" column="robot_serial" /> -->
+<!-- 		<result property="req_data" column="req_data" /> -->
+<!-- 		<result property="mod_data" column="mod_data" /> -->
+<!-- 		<result property="robot_key" column="robot_key" /> -->
+<!-- 	</resultMap> -->
+
+	<select id="getUserInfo" resultType="com.sec.prac.mapper.UserVO">
+		select * from FRONT_USER_INFO
+	</select>
+	<select id="getUserVOInfo" resultType="com.sec.prac.mapper.UserVO">
+		select * from FRONT_USER_INFO
+	</select>
+
+
+</mapper>
